@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">My Lyric</string>
+    <string name="login">Login</string>
+    <string name="title"><![CDATA[My Lyric]]></string>
+    <string name="title2">Request Song</string>
+    <string name="name1">Artist Name</string>
+    <string name="name2">Song Title</string>
+    <string name="name3">Request Type</string>
+    <string name="btn2">Send</string>
+    <string name="title3">My Requests</string>
+    <string name="edit_name">Request Lyrics</string>
+    <string name="edit_name2">Request Song</string>
+    <string name="value1">Artist Name:Kate Linn</string>
+    <string name="value2">Song Title:Ola La</string>
+    <string name="btn3">Edit</string>
+    <string name="btn4">Delete</string>
+    <string name="value3">Artist Name:Justin Bieber</string>
+    <string name="value4">Song Name:Yummy</string>
+    <string name="hint">Request Type</string>
+    <string name="title4">Edit My Requests</string>
+    <string name="edit_text1">Artist Name</string>
+    <string name="edit_text2">Song Title</string>
+    <string name="edit_text3">Request Type</string>
+    <string name="btn5">Cancel</string>
+    <string name="google">SIGN UP WITH GOOGLE</string>
+    <string name="facebook">SIGN UP WITH FACEBOOK</string>
+    <string-array name="request_types">
+        <item> None </item>
+        <item> Lyrics </item>
+        <item> Songs </item>
+    </string-array>
+</resources>
