@@ -89,7 +89,7 @@ public class EditDeleteRequest extends AppCompatActivity {
     }
 
     public void Edit(){
-        Intent intent = new Intent(this, EditRequestForm.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 

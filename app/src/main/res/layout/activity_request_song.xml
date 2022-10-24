@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
     tools:context=".RequestSong">
 
     <TextView
@@ -11,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/title2"
-        android:textColor="@color/design_default_color_on_secondary"
+        android:textColor="#F4E7E7"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/view"
@@ -25,7 +26,7 @@
         android:id="@+id/view"
         android:layout_width="298dp"
         android:layout_height="431dp"
-        android:background="#C3B8D6"
+        android:background="@drawable/gradient_body"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,8 +39,10 @@
         android:layout_height="50dp"
         android:autofillHints=""
         android:ems="10"
+        android:fontFamily="sans-serif"
         android:inputType="textPersonName"
         android:text="@string/name1"
+        android:textColor="@color/design_default_color_background"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
         app:layout_constraintEnd_toEndOf="@+id/view"
@@ -57,7 +60,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/name2"
-        android:textColor="@color/black"
+        android:textColor="@color/design_default_color_background"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/spinner"
         app:layout_constraintEnd_toEndOf="@+id/view"
@@ -80,6 +83,7 @@
         android:id="@+id/button"
         android:layout_width="108dp"
         android:layout_height="54dp"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
         android:text="Send"
         android:textColor="@color/design_default_color_on_secondary"
         android:textSize="20sp"
@@ -95,7 +99,7 @@
         android:layout_height="336dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/pngtreeaudio_books_leisure_time_listening_6840098" />
 

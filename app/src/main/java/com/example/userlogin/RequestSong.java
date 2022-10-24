@@ -9,12 +9,16 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.Toast;
+
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 
 
-import com.example.userlogin.ui.Request;
+public class RequestSong extends AppCompatActivity {
+    GoogleSignInOptions gso;
+    GoogleSignInClient gsc;
 
-public class RequestSong extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private Spinner spinner;
 
     private Button button;
@@ -28,17 +32,19 @@ public class RequestSong extends AppCompatActivity implements AdapterView.OnItem
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.request_types, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(this);
+        spinner.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) this);
 
-        button = (Button) findViewById(R.id.button);
+        button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Send();
             }
         });
 
-
+        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
+        gsc = GoogleSignIn.getClient(this , gso);
 
     }
     public void Send(){
@@ -46,14 +52,5 @@ public class RequestSong extends AppCompatActivity implements AdapterView.OnItem
         startActivity(intent);
     }
 
-    @Override
-    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-        String text = adapterView.getItemAtPosition(i).toString();
-        Toast.makeText(adapterView.getContext(), text, Toast.LENGTH_SHORT).show();
-    }
 
-    @Override
-    public void onNothingSelected(AdapterView<?> adapterView) {
-
-    }
 }

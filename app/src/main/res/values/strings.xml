@@ -12,12 +12,12 @@
     <string name="edit_name2">Request Song</string>
     <string name="value1">Artist Name:Kate Linn</string>
     <string name="value2">Song Title:Ola La</string>
-    <string name="btn3">Edit</string>
+    <string name="btn3">Add</string>
     <string name="btn4">Delete</string>
     <string name="value3">Artist Name:Justin Bieber</string>
     <string name="value4">Song Name:Yummy</string>
     <string name="hint">Request Type</string>
-    <string name="title4">Edit My Requests</string>
+    <string name="title4">Accept or Decline Requests</string>
     <string name="edit_text1">Artist Name</string>
     <string name="edit_text2">Song Title</string>
     <string name="edit_text3">Request Type</string>
@@ -29,4 +29,23 @@
         <item> Lyrics </item>
         <item> Songs </item>
     </string-array>
+    <string name="AppTheme.NoActionBar">
+        <item name="windowActionBar"> false </item>
+        <item name="windowNoTitle"> true </item>
+    </string>
+    <string name="menu_open"> Open </string>
+    <string name="close_menu"> Close </string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
