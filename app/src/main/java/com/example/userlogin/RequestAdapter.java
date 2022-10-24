@@ -39,7 +39,7 @@ public class RequestAdapter extends BaseAdapter{
         View rootView = LayoutInflater.from(context)
                 .inflate(R.layout.item_request, viewGroup, false);
 
-        TextView txtName = rootView.findViewById(R.id.spinner);
+        TextView txtName = rootView.findViewById(R.id.type);
 
         txtName.setText(list.get(i).getName());
 

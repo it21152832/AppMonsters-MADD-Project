@@ -26,7 +26,7 @@
         android:id="@+id/view"
         android:layout_width="298dp"
         android:layout_height="431dp"
-        android:background="@drawable/gradient_body"
+        android:background="@drawable/gradient"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +34,7 @@
         app:layout_constraintVertical_bias="0.291" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/artistname"
         android:layout_width="192dp"
         android:layout_height="50dp"
         android:autofillHints=""
@@ -44,7 +44,7 @@
         android:text="@string/name1"
         android:textColor="@color/design_default_color_background"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintBottom_toTopOf="@+id/songtitle"
         app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="@+id/view"
@@ -52,7 +52,7 @@
         app:layout_constraintVertical_bias="0.836" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/songtitle"
         android:layout_width="195dp"
         android:layout_height="47dp"
         android:layout_marginBottom="16dp"
@@ -62,25 +62,25 @@
         android:text="@string/name2"
         android:textColor="@color/design_default_color_background"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintBottom_toTopOf="@+id/type"
         app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintStart_toStartOf="@+id/view" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/type"
         android:layout_width="196dp"
         android:layout_height="51dp"
         android:layout_marginBottom="16dp"
         android:autofillHints="@string/hint"
         android:contentDescription="@string/name3"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/add"
         app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="@+id/view" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/add"
         android:layout_width="108dp"
         android:layout_height="54dp"
         android:backgroundTint="?android:attr/colorPressedHighlight"
