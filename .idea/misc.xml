@@ -8,11 +8,15 @@
         <entry key="..\:/Users/JP Herath/AndroidStudioProjects/My Lyric/app/src/main/res/drawable/custom_image.xml" value="0.2435" />
         <entry key="..\:/Users/JP Herath/AndroidStudioProjects/My Lyric/app/src/main/res/drawable/gradient_background.xml" value="0.2435" />
         <entry key="..\:/Users/JP Herath/AndroidStudioProjects/My Lyric/app/src/main/res/drawable/gradient_body.xml" value="0.2585" />
+        <entry key="..\:/Users/JP Herath/AndroidStudioProjects/My Lyric/app/src/main/res/drawable/login.xml" value="0.1495" />
+        <entry key="..\:/Users/JP Herath/AndroidStudioProjects/My Lyric/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.14390896921017404" />
+        <entry key="..\:/Users/JP Herath/AndroidStudioProjects/My Lyric/app/src/main/res/layout-w936dp/activity_login.xml" value="0.16796875" />
         <entry key="..\:/Users/JP Herath/AndroidStudioProjects/My Lyric/app/src/main/res/layout/activity_dashboard.xml" value="0.16" />
         <entry key="..\:/Users/JP Herath/AndroidStudioProjects/My Lyric/app/src/main/res/layout/activity_delete_request.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/JP Herath/AndroidStudioProjects/My Lyric/app/src/main/res/layout/activity_edit_delete_request.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/JP Herath/AndroidStudioProjects/My Lyric/app/src/main/res/layout/activity_edit_request_form.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/JP Herath/AndroidStudioProjects/My Lyric/app/src/main/res/layout/activity_home.xml" value="0.2341485507246377" />
+        <entry key="..\:/Users/JP Herath/AndroidStudioProjects/My Lyric/app/src/main/res/layout/activity_login.xml" value="0.22395833333333334" />
         <entry key="..\:/Users/JP Herath/AndroidStudioProjects/My Lyric/app/src/main/res/layout/activity_main.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/JP Herath/AndroidStudioProjects/My Lyric/app/src/main/res/layout/activity_request_song.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/JP Herath/AndroidStudioProjects/My Lyric/app/src/main/res/layout/app_bar_home.xml" value="0.2341485507246377" />
@@ -23,6 +27,7 @@
         <entry key="..\:/Users/JP Herath/AndroidStudioProjects/My Lyric/app/src/main/res/layout/fragment_slideshow.xml" value="0.2341485507246377" />
         <entry key="..\:/Users/JP Herath/AndroidStudioProjects/My Lyric/app/src/main/res/layout/header_menu.xml" value="0.16" />
         <entry key="..\:/Users/JP Herath/AndroidStudioProjects/My Lyric/app/src/main/res/layout/home.xml" value="0.19427083333333334" />
+        <entry key="..\:/Users/JP Herath/AndroidStudioProjects/My Lyric/app/src/main/res/layout/item_request.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/JP Herath/AndroidStudioProjects/My Lyric/app/src/main/res/layout/main_menu.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/JP Herath/AndroidStudioProjects/My Lyric/app/src/main/res/layout/nav_header_home.xml" value="0.2341485507246377" />
         <entry key="..\:/Users/JP Herath/AndroidStudioProjects/My Lyric/app/src/main/res/menu/activity_main_drawer.xml" value="0.25416666666666665" />

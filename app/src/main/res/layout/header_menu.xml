@@ -12,19 +12,19 @@
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your Name"
-        android:textSize="30sp"
+        android:text="Sandali Herath"
         android:textColor="@color/black"
-        android:textStyle="bold"/>
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
 
     <TextView
         android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="E-mail"
-        android:textSize="20sp"
-        android:textColor="@color/black"/>
+        android:text="mahinsala2000@gmail.com"
+        android:textColor="#454242"
+        android:textSize="16sp" />
 
 
 </LinearLayout>

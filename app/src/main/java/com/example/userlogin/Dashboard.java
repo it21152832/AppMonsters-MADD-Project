@@ -101,7 +101,12 @@ public class Dashboard extends AppCompatActivity {
                         break;
 
                     case R.id.nav_signout:
-                        signout();
+                        gsc.signOut().addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                signout();
+                            }
+                        });
                         break;
 
                     default:
@@ -119,13 +124,8 @@ public class Dashboard extends AppCompatActivity {
     }
 
     private void signout() {
-        gsc.signOut().addOnCompleteListener(new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
-                finish();
-                startActivity(new Intent(Dashboard.this, MainActivity.class));
-            }
-        });
+        Intent intent = new Intent(Dashboard.this,MainActivity.class);
+        startActivity(intent);
     }
 
 

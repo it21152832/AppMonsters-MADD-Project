@@ -27,56 +27,70 @@
 
         <Button
             android:id="@+id/playlist"
-            android:layout_width="136dp"
-            android:layout_height="117dp"
-            android:layout_marginStart="32dp"
-            android:background="@android:color/holo_orange_light"
+            android:layout_width="290dp"
+            android:layout_height="120dp"
+            android:backgroundTint="@color/com_smart_login_code"
+            android:text="Playlist"
+            android:textSize="28sp"
+            android:textStyle="bold"
             app:icon="@drawable/ic_baseline_library_music_24"
             app:iconSize="100dp"
-            app:layout_constraintBottom_toBottomOf="@+id/songs"
-            app:layout_constraintEnd_toStartOf="@+id/songs"
-            app:layout_constraintHorizontal_bias="0.278"
+            app:layout_constraintBottom_toTopOf="@+id/songs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.598" />
 
         <Button
             android:id="@+id/songs"
-            android:layout_width="136dp"
-            android:layout_height="117dp"
-            android:layout_marginEnd="28dp"
-            android:background="@android:color/holo_orange_light"
+            android:layout_width="290dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="@color/teal_700"
+            android:text="Songs"
+            android:textSize="28sp"
+            android:textStyle="bold"
             app:icon="@drawable/ic_baseline_play_circle_outline_24"
             app:iconSize="100dp"
             app:layout_constraintBottom_toTopOf="@+id/lyrics"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.555" />
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/lyrics"
-            android:layout_width="136dp"
-            android:layout_height="117dp"
-            android:background="@android:color/holo_orange_light"
+            android:layout_width="290dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#DF4479"
+            android:text="Lyrics"
+            android:textSize="28sp"
+            android:textStyle="bold"
             app:icon="@drawable/ic_baseline_music_note_24"
             app:iconSize="100dp"
-            app:layout_constraintBottom_toBottomOf="@+id/request"
-            app:layout_constraintEnd_toStartOf="@+id/request"
+            app:layout_constraintBottom_toTopOf="@+id/request"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/request"
-            android:layout_width="136dp"
-            android:layout_height="117dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginBottom="204dp"
-            android:background="@android:color/holo_orange_light"
+            android:layout_width="290dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#FF9800"
+            android:text="Request"
+            android:textSize="28sp"
             app:icon="@drawable/ic_baseline_contact_support_24"
             app:iconSize="100dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background"
+    android:background="@drawable/login"
     tools:context=".MainActivity">
 
     <TextView
@@ -42,6 +42,8 @@
         android:textColor="@color/design_default_color_background"
         android:textStyle="bold"
         app:backgroundTint="#DD4B39"
+        app:icon="@drawable/googleg_standard_color_18"
+        app:iconPadding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/facebook"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -56,6 +58,9 @@
         android:textColor="@color/design_default_color_background"
         android:textStyle="bold"
         app:backgroundTint="#3B5998"
+        app:icon="@drawable/com_facebook_favicon_blue"
+        app:iconPadding="10dp"
+        app:iconSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

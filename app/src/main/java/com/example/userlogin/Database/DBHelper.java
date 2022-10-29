@@ -6,9 +6,11 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import androidx.annotation.Nullable;
+
 public class DBHelper extends SQLiteOpenHelper {
 
-    public static final String DATABASE_NAME = "MyLyric.db";
+    public static final String DATABASE_NAME = "RequestInfo.db";
 
     public DBHelper(Context context) {
         super(context, DATABASE_NAME, null, 1);
@@ -16,25 +18,19 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        String SQL_CREATE_QUERY = "CREATE TABLE " + RequestMaster.Request.TABLE_NAME + " ("+
-                RequestMaster.Request._ID + " INTEGER PRIMARY KEY," +
-                RequestMaster.Request.COLUMN_NAME_NAME + " TEXT,"+
-                RequestMaster.Request.COLUMN_NAME_SONG + " TEXT,"+
-                RequestMaster.Request.COLUMN_NAME_TYPE + " TEXT)";
-
-        sqLiteDatabase.execSQL(SQL_CREATE_QUERY);
-
+        sqLiteDatabase.execSQL("CREATE TABLE request(id INTEGER primary key,artist_name TEXT, song_title TEXT, song_type TEXT)");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-
+        sqLiteDatabase.execSQL("drop table if exists request");
     }
 
     public long AddInfo(Request r){
         SQLiteDatabase db = getWritableDatabase();
 
         ContentValues cv = new ContentValues();
+
         cv.put(RequestMaster.Request.COLUMN_NAME_NAME, r.getArtist_name());
         cv.put(RequestMaster.Request.COLUMN_NAME_SONG, r.getSong_title());
         cv.put(RequestMaster.Request.COLUMN_NAME_TYPE, r.getSong_type());
@@ -45,58 +41,12 @@ public class DBHelper extends SQLiteOpenHelper {
 
     }
 
-    public boolean login(Request r){
-        SQLiteDatabase db = getReadableDatabase();
-        long id = 0;
 
-        //select id from users where username = " " and password = " "
-        String[] projection = {
-                RequestMaster.Request._ID,
-                RequestMaster.Request.COLUMN_NAME_NAME,
-                RequestMaster.Request.COLUMN_NAME_SONG,
-                RequestMaster.Request.COLUMN_NAME_NAME
-        };
-
-        String selection = RequestMaster.Request.COLUMN_NAME_NAME + " LIKE ? AND " + RequestMaster.Request.COLUMN_NAME_SONG + " LIKE ? AND "
-                + RequestMaster.Request.COLUMN_NAME_TYPE + " LIKE ? ";
-
-        String selectionArgs[] = {
-                r.getArtist_name(),
-                r.getSong_title(),
-                r.getSong_type()
-        };
-
-        String sortOrder = RequestMaster.Request.COLUMN_NAME_NAME + " DESC ";
-
-        Cursor c = db.query(
-                RequestMaster.Request.TABLE_NAME,
-                projection,
-                selection,
-                selectionArgs,
-                null,
-                null,
-                sortOrder
-
-        );
-
-        while (c.moveToNext()){
-            id = c.getLong(c.getColumnIndexOrThrow(RequestMaster.Request._ID));
-        }
-
-        if(id > 0){
-            return true;
-        }
-        else{
-            return false;
-        }
-
-    }
-
-    public boolean editRequest(Request u){
+    public boolean updateUser(Request r){
         SQLiteDatabase db = getReadableDatabase();
 
         ContentValues values = new ContentValues();
-        values.put(RequestMaster.Request.COLUMN_NAME_TYPE , u.getSong_type());
+        values.put(RequestMaster.Request.COLUMN_NAME_SONG, r.getSong_title());
 
         /*
         String selection = UsersMaster.Users.COLUMN_NAME_USERNAME = " LIKE ? ";
@@ -110,7 +60,8 @@ public class DBHelper extends SQLiteOpenHelper {
                 values,
                 RequestMaster.Request.COLUMN_NAME_NAME + " LIKE ? ",
                 new String[]{
-                        u.getArtist_name()
+                        r.getArtist_name()
+
                 }
         );
 
@@ -123,14 +74,14 @@ public class DBHelper extends SQLiteOpenHelper {
 
     }
 
-    public boolean deleteRequest(Request u){
+    public boolean deleteUser(Request r){
         SQLiteDatabase db = getReadableDatabase();
 
         if (db.delete(
                 RequestMaster.Request.TABLE_NAME,
                 RequestMaster.Request.COLUMN_NAME_NAME + " = ? ",
                 new String[]{
-                        u.getArtist_name()
+                        r.getArtist_name()
                 } ) > 0
         )
         {

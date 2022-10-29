@@ -20,7 +20,7 @@
         app:layout_constraintHorizontal_bias="0.193"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.333" />
+        app:layout_constraintVertical_bias="0.426" />
 
     <View
         android:id="@+id/view"
@@ -29,9 +29,10 @@
         android:background="@drawable/gradient"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.291" />
+        app:layout_constraintVertical_bias="0.306" />
 
     <EditText
         android:id="@+id/artistname"
@@ -83,20 +84,19 @@
         android:id="@+id/add"
         android:layout_width="108dp"
         android:layout_height="54dp"
-        android:backgroundTint="?android:attr/colorPressedHighlight"
+        android:backgroundTint="#2A194C"
         android:text="Send"
-        android:textColor="@color/design_default_color_on_secondary"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="@+id/view" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="339dp"
-        android:layout_height="336dp"
+        android:layout_width="331dp"
+        android:layout_height="305dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

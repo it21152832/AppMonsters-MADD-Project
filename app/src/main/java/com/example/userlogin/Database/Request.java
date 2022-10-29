@@ -1,15 +1,12 @@
 package com.example.userlogin.Database;
 
-import android.widget.EditText;
-
 public class Request {
     private Integer requestID;
     private String artist_name;
     private String song_title;
     private String song_type;
 
-    public Request(String artist_name, String song_title) {
-        this.requestID = requestID;
+    public Request(String artist_name, String song_title, String song_type) {
         this.artist_name = artist_name;
         this.song_title = song_title;
         this.song_type = song_type;

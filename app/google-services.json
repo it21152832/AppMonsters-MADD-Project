@@ -1,10 +1,40 @@
 {
   "project_info": {
     "project_number": "79127774312",
+    "firebase_url": "https://my-lyric-1666520459815-default-rtdb.firebaseio.com",
     "project_id": "my-lyric-1666520459815",
     "storage_bucket": "my-lyric-1666520459815.appspot.com"
   },
   "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79127774312:android:e4645db20ed544a939a7dd",
+        "android_client_info": {
+          "package_name": "com.example.mylyric"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79127774312-4j36u4868ldnqr036qf229ds9dmcno8b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp6DEm4ztxb8pd5DXyHO_Q8AaLMZYZs5U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79127774312-4j36u4868ldnqr036qf229ds9dmcno8b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
     {
       "client_info": {
         "mobilesdk_app_id": "1:79127774312:android:30f2ebe8e9bd117e39a7dd",
