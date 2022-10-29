@@ -24,6 +24,7 @@ public class DBHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
         sqLiteDatabase.execSQL("drop table if exists request");
+        sqLiteDatabase.execSQL("drop table if exists requestConfirm");
     }
 
     public long AddInfo(Request r){
