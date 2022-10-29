@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MyLyric-Playlists</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string-array name="Song_Item">
+        <item>Rolling In The Deep - Adele</item>
+        <item>Peter Pan - EXO</item>
+        <item>Stay - Kid Laori ft. Justin Bieber</item>
+        <item>Rock With You - Seventeen</item>
+        <item>Lovely - Billie Eilish</item>
+        <item>Counting Stars - One Republic</item>
+        <item>Easy On Me - Adele</item>
+        <item>2002 - Anne Marie</item>
+        <item>A  Whole New World - Zayn and Zhavia</item>
+        <item>Light Switch - Charlie Puth</item>
+    </string-array>
+</resources>
