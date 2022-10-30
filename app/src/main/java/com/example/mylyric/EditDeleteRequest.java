@@ -67,7 +67,7 @@ public class EditDeleteRequest extends AppCompatActivity {
 
                 DBHelper db = new DBHelper(EditDeleteRequest.this);
 
-                if(db.updateUser(r)){
+                if(db.updateRequest(r)){
                     Toast.makeText(EditDeleteRequest.this, "Updated!", Toast.LENGTH_SHORT).show();
                 }
                 else{
@@ -82,8 +82,8 @@ public class EditDeleteRequest extends AppCompatActivity {
                 Request r = new Request(et1.getText().toString().trim() , et2.getText().toString().trim(),spinner.getSelectedItem().toString());
                 DBHelper db = new DBHelper(EditDeleteRequest.this);
 
-                if(db.deleteUser(r)){
-                    Toast.makeText(EditDeleteRequest.this, "User Deleted!", Toast.LENGTH_SHORT).show();
+                if(db.deleteRequest(r)){
+                    Toast.makeText(EditDeleteRequest.this, "Request Deleted!", Toast.LENGTH_SHORT).show();
                 }
                 else{
                     Toast.makeText(EditDeleteRequest.this, "Delete Unsuccessful!", Toast.LENGTH_SHORT).show();

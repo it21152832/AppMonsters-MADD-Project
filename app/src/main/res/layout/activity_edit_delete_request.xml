@@ -9,8 +9,8 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="305dp"
-        android:layout_height="532dp"
+        android:layout_width="301dp"
+        android:layout_height="572dp"
         android:background="@drawable/gradient_background_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,13 +34,13 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.845" />
+        app:layout_constraintVertical_bias="0.752" />
 
     <EditText
         android:id="@+id/songtitle"
         android:layout_width="195dp"
         android:layout_height="47dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="48dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
@@ -49,14 +49,14 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/rtype"
         app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="@+id/view" />
 
     <Spinner
         android:id="@+id/rtype"
         android:layout_width="195dp"
         android:layout_height="47dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="52dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
@@ -65,28 +65,28 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/add"
         app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="@+id/view" />
 
     <Button
         android:id="@+id/add"
-        android:layout_width="108dp"
+        android:layout_width="150dp"
         android:layout_height="54dp"
+        android:layout_marginBottom="24dp"
         android:backgroundTint="#4507B3"
         android:text="@string/btn3"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/delete"
-        app:layout_constraintEnd_toStartOf="@+id/delete"
-        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintBottom_toTopOf="@+id/delete"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="@+id/view" />
 
     <Button
         android:id="@+id/edit"
-        android:layout_width="124dp"
+        android:layout_width="150dp"
         android:layout_height="54dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginBottom="44dp"
         android:backgroundTint="#2A19AC"
         android:text="@string/btn4"
         android:textColor="@color/white"
@@ -94,21 +94,20 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="@+id/view" />
 
     <Button
         android:id="@+id/delete"
-        android:layout_width="108dp"
+        android:layout_width="150dp"
         android:layout_height="54dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="24dp"
         android:backgroundTint="#2A19AC"
         android:text="@string/btn6"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/edit"
-        app:layout_constraintEnd_toEndOf="@+id/view" />
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

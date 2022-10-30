@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    public static final String DATABASE_NAME = "RequestManage.db";
+    public static final String DATABASE_NAME = "RequestIManage.db";
 
     public DBHelper(Context context) {
 
@@ -40,18 +40,11 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
 
-    public boolean updateUser(Request r){
+    public boolean updateRequest(Request r){
         SQLiteDatabase db = getReadableDatabase();
 
         ContentValues values = new ContentValues();
         values.put(RequestMaster.Request.COLUMN_NAME_SONG, r.getSong_title());
-
-        /*
-        String selection = UsersMaster.Users.COLUMN_NAME_USERNAME = " LIKE ? ";
-        String[] selectArgs = {
-                u.getUsername()
-        };
-        **/
 
         int count = db.update(
                 RequestMaster.Request.TABLE_NAME,
@@ -72,7 +65,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     }
 
-    public boolean deleteUser(Request r){
+    public boolean deleteRequest(Request r){
         SQLiteDatabase db = getReadableDatabase();
 
         if (db.delete(
@@ -93,7 +86,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public Cursor getRequest(){
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery("Select * from RequestInfo.request",null);
+        Cursor cursor = db.rawQuery("Select * from requestConfirm",null);
         return cursor;
     }
 }
